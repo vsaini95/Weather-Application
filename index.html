@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="leftSection">
+        <div class="leftside">
+          <div class="searchBtn">
+            <button type="submit">Search for Places</button>
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </div>
+          <img src="img/Shower.png" alt="ShowerIcon" />
+          <h1 class="temp">15<span>&deg;C</span></h1>
+          <h1 class="weather">shower</h1>
+
+          <div class="todayDate">
+            <p>Today • <span>02 Aug</span></p>
+          </div>
+
+          <div class="currentlocation">
+            <i class="fa-solid fa-location-dot"></i> Roorkee
+          </div>
+        </div>
+        <div class="searchList hidden">
+          <i class="fa-solid fa-xmark"></i>
+          <div class="searchBar">
+            <input type="text" placeholder="search for nearby cities" />
+            <button type="submit">Search</button>
+          </div>
+          <ul class="lastSearch"></ul>
+        </div>
+      </section>
+      <section class="rightSection">
+        <div class="tempConverter">
+          <button type="" id="celcius">&deg; C</button>
+          <button type="" id="fahrenheit">&deg; F</button>
+        </div>
+        <article class="row">
+          <div class="card">
+            <p>Today</p>
+            <img src="/img/Shower.png" alt="" />
+            <div class="maxMinTemp">
+              <h1 class="minTemp">33&deg;</h1>
+              <h1 class="maxTemp">45&deg;</h1>
+            </div>
+          </div>
+          <div class="card">
+            <p>Today</p>
+            <img src="/img/Shower.png" alt="" />
+            <div class="maxMinTemp">
+              <h1 class="minTemp">33&deg;</h1>
+              <h1 class="maxTemp">45&deg;</h1>
+            </div>
+          </div>
+          <div class="card">
+            <p>Today</p>
+            <img src="/img/Shower.png" alt="" />
+            <div class="maxMinTemp">
+              <h1 class="minTemp">33&deg;</h1>
+              <h1 class="maxTemp">45&deg;</h1>
+            </div>
+          </div>
+          <div class="card">
+            <p>Today</p>
+            <img src="/img/Shower.png" alt="" />
+            <div class="maxMinTemp">
+              <h1 class="minTemp">33&deg;</h1>
+              <h1 class="maxTemp">45&deg;</h1>
+            </div>
+          </div>
+          <div class="card">
+            <p>Today</p>
+            <img src="/img/Shower.png" alt="" />
+            <div class="maxMinTemp">
+              <h1 class="minTemp">33&deg;</h1>
+              <h1 class="maxTemp">45&deg;</h1>
+            </div>
+          </div>
+        </article>
+        <h1 class="Highlights">Today's Highlights</h1>
+        <article class="row">
+          <div class="card extra">
+            <p>Wind Status</p>
+            <h2 class="windStatus">7Mph</h2>
+            <p class=""><i class="fa-solid fa-location-dot"></i> WSW</p>
+          </div>
+          <div class="card extra">
+            <p>Humidity</p>
+            <h2 class="humidity">84%</h2>
+            <div>
+              <label for="progress"></label>
+              <progress id="progress" value="67" max="100">67%</progress>
+            </div>
+          </div>
+          <div class="card extra">
+            <p>Visibility</p>
+            <h2 class="visibility">6.4 miles</h2>
+          </div>
+          <div class="card extra">
+            <p>Air Pressure</p>
+            <h2 class="windStatus">998 mb</h2>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
