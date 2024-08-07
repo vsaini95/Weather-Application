@@ -22,6 +22,10 @@ const visibility = document.querySelector(".visibility");
 const progress = document.getElementById("progress");
 const cards = document.querySelectorAll(".upperCard");
 
+let listOfCity = localStorage.getItem("city")
+  ? JSON.parse(localStorage.getItem("city"))
+  : [];
+
 const month = [
   "Jan",
   "Feb",
@@ -104,9 +108,23 @@ const renderData = () => {
       cards.forEach((item, i) => {
         update(item, i, listArr);
       });
+      let flag = 0;
+      listOfCity.forEach((item) => {
+        if (item == searchCity.value) {
+          flag = 1;
+        }
+      });
+      if (!flag) {
+        listOfCity.push(searchCity.value);
+        addListItem(listOfCity);
+      }
+      searchCity.value = "";
+
+      window.localStorage.setItem("city", JSON.stringify(listOfCity));
+      Toggle();
     })
     .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
+      console.error(alert("Entered city can't be found"), error);
     });
 };
 
@@ -119,26 +137,33 @@ function update(item, i, listArr) {
   changeIcon(item.querySelector("img"), listArr[i].weather[0].description);
 
   if (i !== 0) {
-    item.querySelector(".day").innerText = `${Number(
-      listArr[i].dt_txt.slice(8, 10)
-    )}, ${month[Number(listArr[i].dt_txt.slice(5, 7) - 1)]}`;
+    item.querySelector(".day").innerText = `${
+      Number(listArr[i].dt_txt.slice(8, 10)) + 1
+    }, ${month[Number(listArr[i].dt_txt.slice(5, 7) - 1)]}`;
   }
 }
 
 function checkKey(e) {
   if (e.key == "Enter") {
     renderData();
-    addListItem();
   }
 }
 
-function addListItem() {
-  const node = document.createElement("li");
-  const textNode = document.createTextNode(searchCity.value);
-  node.appendChild(textNode);
-  lastSearchList.appendChild(node);
-  searchCity.value = "";
+function addListItem(cities) {
+  cities &&
+    cities.forEach((city) => {
+      const node = document.createElement("li");
+      const textNode = document.createTextNode(city);
+
+      node.appendChild(textNode);
+      lastSearchList.appendChild(node);
+      node.addEventListener("click", () => {
+        searchCity.value = city;
+      });
+    });
 }
+
+addListItem(listOfCity);
 /*------------------------- eventlistner-----------------------------------------*/
 
 searchBtn.addEventListener("click", Toggle);
