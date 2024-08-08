@@ -30,12 +30,12 @@
             <button type="submit">Search for Places</button>
             <i class="fa-solid fa-location-crosshairs"></i>
           </div>
-          <img src="img/Shower.png" alt="ShowerIcon" />
+          <img class="weatherIcon" src="img/Shower.png" alt="ShowerIcon" />
           <h1 class="temp">15<span>&deg;C</span></h1>
           <h1 class="weather">shower</h1>
 
-          <div class="todayDate">
-            <p>Today • <span>02 Aug</span></p>
+          <div>
+            <p class="todayDate">Today • <span class="Date">02 Aug</span></p>
           </div>
 
           <div class="currentlocation">
@@ -45,8 +45,12 @@
         <div class="searchList hidden">
           <i class="fa-solid fa-xmark"></i>
           <div class="searchBar">
-            <input type="text" placeholder="search for nearby cities" />
-            <button type="submit">Search</button>
+            <input
+              class="searchCity"
+              type="text"
+              placeholder="search for cities"
+            />
+            <button class="search" type="submit">Search</button>
           </div>
           <ul class="lastSearch"></ul>
         </div>
@@ -57,40 +61,40 @@
           <button type="" id="fahrenheit">&deg; F</button>
         </div>
         <article class="row">
-          <div class="card">
-            <p>Today</p>
+          <div class="card upperCard">
+            <p class="day">Tommorrow</p>
             <img src="/img/Shower.png" alt="" />
             <div class="maxMinTemp">
               <h1 class="minTemp">33&deg;</h1>
               <h1 class="maxTemp">45&deg;</h1>
             </div>
           </div>
-          <div class="card">
-            <p>Today</p>
+          <div class="card upperCard">
+            <p class="day">Today</p>
             <img src="/img/Shower.png" alt="" />
             <div class="maxMinTemp">
               <h1 class="minTemp">33&deg;</h1>
               <h1 class="maxTemp">45&deg;</h1>
             </div>
           </div>
-          <div class="card">
-            <p>Today</p>
+          <div class="card upperCard">
+            <p class="day">Today</p>
             <img src="/img/Shower.png" alt="" />
             <div class="maxMinTemp">
               <h1 class="minTemp">33&deg;</h1>
               <h1 class="maxTemp">45&deg;</h1>
             </div>
           </div>
-          <div class="card">
-            <p>Today</p>
+          <div class="card upperCard">
+            <p class="day">Today</p>
             <img src="/img/Shower.png" alt="" />
             <div class="maxMinTemp">
               <h1 class="minTemp">33&deg;</h1>
               <h1 class="maxTemp">45&deg;</h1>
             </div>
           </div>
-          <div class="card">
-            <p>Today</p>
+          <div class="card upperCard">
+            <p class="day">Today</p>
             <img src="/img/Shower.png" alt="" />
             <div class="maxMinTemp">
               <h1 class="minTemp">33&deg;</h1>
@@ -119,7 +123,7 @@
           </div>
           <div class="card extra">
             <p>Air Pressure</p>
-            <h2 class="windStatus">998 mb</h2>
+            <h2 class="airpressure">998 mb</h2>
           </div>
         </article>
       </section>

@@ -148,13 +148,14 @@ function checkKey(e) {
     renderData();
   }
 }
-
+let count = 0;
 function addListItem(cities) {
+  cities = cities.slice(count);
   cities &&
     cities.forEach((city) => {
       const node = document.createElement("li");
       const textNode = document.createTextNode(city);
-
+      count++;
       node.appendChild(textNode);
       lastSearchList.appendChild(node);
       node.addEventListener("click", () => {
