@@ -18,9 +18,9 @@ The Weather Web App is a responsive application that uses the OpenWeatherMap API
 2. **Enhance User Experience**: Ensure the app is easy to use, visually appealing, and accessible on various devices.
 3. **Integrate OpenWeatherMap API**: Utilize the OpenWeatherMap API to fetch and display real-time weather data.
 
-## Screenshots
+## Screenshot
 
-![Screenshot (142)](https://github.com/user-attachments/assets/e5b62e74-bdab-4bb8-8de7-5691191fa4fa)
+![Screenshot (144)](https://github.com/user-attachments/assets/f4de1d1c-66fe-40cd-862f-38ba65d221d0)
 
 
 ## Project Process
@@ -33,7 +33,7 @@ The Weather Web App is a responsive application that uses the OpenWeatherMap API
    - Developed the search functionality to allow users to enter a city name and retrieve weather data.
    - Displayed current weather conditions and a 5-day forecast in a user-friendly format.
 4. **Testing and Optimization**: Conducted thorough testing to ensure the app works correctly across different devices and browsers. Optimized performance to ensure quick load times and smooth interactions.
-5. **Deployment**: Deployed the web app to a github pages.
+5. **Deployment**: Deployed the web app to github pages.
 
 ## Setup and Run Instructions
 
