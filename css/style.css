@@ -157,8 +157,9 @@ progress {
 .searchBar {
   width: 100%;
   display: flex;
-  justify-content: center;
   position: relative;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .searchBar input {
   padding: 10px;
@@ -176,4 +177,20 @@ progress {
   width: 25%;
   border: 1px solid var(--white-color);
   margin: 0 20px;
+}
+.lastSearch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.lastSearch li {
+  width: calc(100% - 40px);
+  background-color: transparent;
+  color: #6e707a;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+  border: 1px solid var(--white-color);
 }
