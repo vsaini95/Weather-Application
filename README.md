@@ -40,7 +40,7 @@ The Weather Web App is a responsive application that uses the OpenWeatherMap API
 To set up and run the Weather Web App locally, follow these steps:
 
 1. **Clone the repository**:
-   git clone https://github.com/yourusername/weather-web-app.git
+   git clone [repository URL](https://github.com/vsaini95/Weather-Application)
 2. **Navigate to the project directory**:
    cd weather-web-app
 
